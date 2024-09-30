@@ -15,7 +15,8 @@ The website is built with modern web technologies, making it fully responsive an
 ## Demo
 You can view the live version of the portfolio here.
 https://drive.google.com/file/d/12EgaPGhiJrP6OJNp8_eKLA0rpru0jsBH/view?usp=sharing
-#Features
+
+## Features
 Responsive Design: Adapts to any screen size (desktop, tablet, mobile).
 Dynamic Sections: Bio, skills, projects, contact form, etc.
 Project Showcase: Display of previous projects with images, descriptions, and links.
@@ -23,9 +24,9 @@ Contact Form: Users can reach out via a contact form with validation.
 Smooth Animations: Subtle animations to improve user experience.
 
 ## Technologies Used
-HTML: For structuring the content of the site.
-CSS: For styling and responsiveness.
-JavaScript: For interactivity and receiving contact form through google sheets.
+-HTML: For structuring the content of the site.
+-CSS: For styling and responsiveness.
+-JavaScript: For interactivity and receiving contact form through google sheets.
 
 ## Usage
 Customization: You can easily customize the content of the portfolio by editing the HTML files.
