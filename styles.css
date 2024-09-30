@@ -1,0 +1,428 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #3cfeeb;
+    color: #140808;
+    background-size:100%100%;
+    background-position: cover;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.text h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -200px;
+    color: #211414;
+    overflow: hidden; /* Ensures text is hidden initially */
+    border-right: 0.15em solid #333; /* Cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    letter-spacing: 0.1em; /* Adds spacing between letters */
+    animation: typing 3.5s steps(30, end), blink-caret 0.80s step-end infinite; /* Typing and cursor blink effect */
+}
+.text p{
+    color: black;
+}
+/* Typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    20% { border-color: #1d0a0a; }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 20px ;
+    margin-top:70px;
+    background-color: #98f26f;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home {
+    background-image:url("https://img.freepik.com/free-photo/beautiful-luxury-swimming-pool_74190-449.jpg?size=626&ext=jpg&ga=GA1.1.501875048.1717153872&semt=ais_hybrid");
+    background-size:cover;
+    background-position: 50%50%;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+    opacity:0.9;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+}
+
+.home-content .text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.home-content h1 {
+    font-size: 3em;
+}
+
+.home-content span {
+    color: #ab5471;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.home-image img {
+    opacity: 0.99;
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.about {
+    position: relative; /* Position relative for the overlay */
+    margin-top:70px;
+    background-image:url("https://img.freepik.com/free-vector/watercolor-soft-earth-tones-background_23-2151155668.jpg?size=626&ext=jpg&ga=GA1.1.501875048.1717153872&semt=ais_hybrid");
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: 20%20%; /* Centers the image */
+    background-color:#f0e8e8; /* Text color for better readability */
+    padding: 40px; /* Adds space around the content */
+    text-align: center; /* Centers the text */
+    color:#e8e9dc /* Ensures proper layering */
+}
+
+.about::before {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it absolutely within the .about section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0; /* Ensure it's below the text */
+}
+
+.about h2{
+    color:#140808;
+}
+.about p {
+    position: relative; /* Ensures text is above the overlay */
+    z-index: 1; /* Text appears above the overlay */
+}
+
+
+
+.projects{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGOAFIDHvkE59s-F6D1HvRqTp4qtTqEx61A&s");
+    background-size: cover;
+    gap:60px;
+    display:flex;
+    
+    width:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:100vh;
+
+}
+.works{
+    
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcuvVyO2r8YuGOuu-uJgz28qLIxhgbSFCCg&s");
+    color: #ffffff;
+    background-size: cover;
+    background-position: 10%10%;
+}
+.contact {
+    background-color: #f1e1e1;
+    padding: 80px 20px;
+}
+
+.skill-container {
+    width: 100%;
+}
+.projects-container{
+    display: flex;
+    width:60%;
+    display: flex-start;
+    justify-content: space-around;
+  height:450px;
+  gap:40px;
+    flex-direction: row;
+    align-items: left;
+    
+    
+}
+.works-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+    
+/* Skills Section */
+.skills {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRbBnrc_uFa-a14etlPjxMVbM_jZtUmXpUA&s");
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: 5%;
+    text-align:left;
+    opacity:0.8;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skill-text {
+    font-size: 1em;
+    flex:1;
+}
+
+.skill-bar {
+    display:flex;
+    align-items:center;
+    flex:3;
+    width: 60%; /* Adjust the width as needed */
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    height: 20px;
+    margin-left: 20px; /* Space between text and bar */
+}
+
+.skill-percentage {
+    height: 100%;
+    width: 0; /* This will be animated */
+    background-color: #98f26f;
+    border-radius: 5px;
+    transition: width 2.0s ease-in-out;
+}
+
+.percentage-text {
+    margin-left: 10px; /* Space between bar and percentage text */
+    font-size: 1em;
+    color: #333;
+    line-height: 30px; /* Center text vertically */
+    position: absolute;
+    right: 0; /* Align to the right end of the bar */
+    background-color: hsl(0, 0%, 98%); /* Match background color for seamless appearance */
+    /* Padding for better visibility */
+    border-radius: 5px; /* Optional: round corners */
+}
+
+ .project{
+    flex-wrap: wrap;
+    flex:1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #efe632;
+    border-radius: 1px;
+    transition: transform 0.3s;
+    
+}
+
+.skill:hover, .project:hover, .work:hover {
+    transform: translateY(-10px);
+}
+
+.skill i {
+    font-size: 3em;
+    color: #0073e6;
+}
+/* Container for all works */
+.works-container {
+    display: flex; 
+    gap: 50px;
+    padding:50px; 
+   
+}
+
+/* Each individual work container */
+.work {
+    background-color: hsl(0, 35%, 91%);
+    width: 250px; /* Set a medium width for each work */
+    height: 300px; /* Set a height for each work */
+    overflow: hidden; /* Hide overflow */
+    border: 2px solid #b3879c; /* Optional: Add border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    display: flex; /* Make container a flex item */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    background-color: #7945e0; /* Optional: Background color */
+    border-radius: 8px;
+    flex:1; 
+    color: #e8e9dc;/* Optional: Rounded corners */
+}
+/* Adjust this value */
+.project img{
+    width:270px;
+    height:250px;
+    padding:5px;
+    margin-top:15px;
+   
+}
+.projects-container{
+    display: flex;
+    flex-direction: row; 
+    padding: 10px;
+    flex:1;
+   
+   
+}
+.project h3{
+    text-align:center;
+}
+.project p{
+    margin-top:5px;
+    text-align:justify;
+}
+
+
+
+/* Style for the image inside each work */
+.work img {
+    width: 350px; /* Image should fit inside the container */
+    height: 280px; /* Image should fit inside the container */
+    object-fit: cover; /* Cover the container without distortion */
+    display: block; /* Remove any default spacing */
+    border-radius: 8px; /* Optional: Image rounded corners */
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content .text {
+        padding-right: 0;
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle.active + .nav-links {
+        display: flex;
+    }
+}
