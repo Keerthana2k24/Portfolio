@@ -1,16 +1,16 @@
 # Portfolio Website
 
-This is a personal portfolio website designed to showcase my skills, projects, and works. It includes sections for my bio, projects, skills, Artworks, and contact details. 
+  This is a personal portfolio website designed to showcase my skills, projects, and works. It includes sections for my bio, projects, skills, Artworks, and contact details. 
 The website is built with modern web technologies, making it fully responsive and interactive.
 
 ## Table of Contents
-Demo
-Features
-Technologies Used
-Usage
-Project Structure
-Contributing
-License
+  Demo
+  Features
+  Technologies Used
+  Usage
+  Project Structure
+  Contributing
+  License
 
 ## Demo
 You can view the live version of the portfolio here.
