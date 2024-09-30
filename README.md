@@ -4,13 +4,13 @@
 The website is built with modern web technologies, making it fully responsive and interactive.
 
 ## Table of Contents
-  Demo
-  Features
-  Technologies Used
-  Usage
-  Project Structure
-  Contributing
-  License
+ - [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Demo
 You can view the live version of the portfolio here.
